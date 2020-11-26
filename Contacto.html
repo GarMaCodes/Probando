@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="esp">
+    <head>
+         <meta charset="utf-8">
+         <tltle>Proyecto HTML</title>
+         <link rel="stylesheet" type="text/css" href="styles_Contacto.css" />
+    </head>
+    <body>
+        <div id="contenedor_general">
+            <header id="cabecera">
+         <!--Encabezado-->
+         <h1>Página web utilizando únicamente html</h1>
+         </header>
+         <section id="menu">
+         <!--Menu con lista-->
+         <ul>
+             <li><a href="inicio.html" title="Inicio">Inicio</a></li>
+             <li><a href="Contenidos.html" title="Contenido">Contenidos</a></li>
+             <li><a href="Contacto.html" tltle="Contacto">Contacto</a></li>
+             <li><a href="https://www.lipsum.com/" target="_blank">Texto en Latín</a></li>
+             <!--target="_blank" abre el link en una nueva pestaña-->
+         </ul>
+         <div class="clearfix"></div>
+         </section>
+
+         <!--Contenido de Contacto.html-->
+         <h2>Contacto</h2>
+         <div id="formato">
+         <form>
+             <div id="caja_nombre">
+             <p>
+             <label for="nombre">Nombre</label><br/>
+             <input type="text" name="nombre" id="nombre" />
+             </p>
+             </div>
+             <div id="caja_genero">
+             <p>
+                <label for="genero">Género</label><br/>
+                <input type="radio" name="genero" value="hombre"  />Hombre <br/>
+                <input type="radio" name="genero" value="mujer"  />Mujer <br/>
+                </p>
+                </div>
+             <div id="caja_edad">
+             <p>
+             <label for="edad">Edad</label><br/>
+             <select name="edad" id="edad">
+                    <option value="nada"></option>
+                    <option value="menor">Menor de edad</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="mayor">Adulto mayor</option>
+                    <!--con value para cuando se env�e el formulario-->
+             </select>
+             </p>
+             </div>
+             <div id="caja_comentario">
+             <p>
+             <label for="comentario">Comentario</label><br/>
+             <textarea name="comentario" placeholder="Escriba su comentario"></textarea>
+             </p>
+             </div>
+             <div id="caja_enviar">
+             <p>
+             <input type="submit" value="Enviar" id="enviar" />
+             </p>
+             </div>
+         </form>
+         </div>
+         </div>
+     </body>
+</html>
