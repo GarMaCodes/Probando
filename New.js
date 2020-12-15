@@ -1,3 +1,3 @@
 'use strict'
-
-console.log('Hola mundo');
+var text = 'Hola Mundo';
+console.log(text);
